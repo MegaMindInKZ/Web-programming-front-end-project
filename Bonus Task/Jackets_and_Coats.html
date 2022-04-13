@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackets & Coats (men's)</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css_files/style_of_header.css">
+    <link rel="stylesheet" href="css_files/style_of_footer.css">
+    <link rel="stylesheet" href="css_files/style_of_Men.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Script/header_script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="margin_currency_language_support_delivery_warranty_div">
+            <div id="currency_language_support_delivery_warranty_div" id="lang_currency">
+                <div id="language_currency_div">
+                    <select name="language" id="language_select">
+                        <option value="English"><b>English</b></option>
+                        <option value="Russian">Russian</option>
+                        <option value="Kazakh">Kazakh</option>
+                    </select>
+                    <select name="currency" id="currency_select" onchange="changeCurrency()">
+                        <option value="kz">KZT</option>
+                        <option value="us">USD</option>
+                    </select>
+                </div>
+                <div id="support_delivery_warranty">
+                    <h6 id="support">Support</h6>
+                    <h6 id="delivery">Delivery</h6>
+                    <h6 id="warranty">Warranty</h6>
+                </div>
+            </div>
+        </div>
+        <div id="logo_search_searchButton_notification_signIn_myOrders_shoppingCart_div">
+            <img src="images/icons8-menu-30.png" alt="Menu logo" id="menu_logo_for_mobile">
+            <a href="MainPage.html"><img src="images/logo_of_website_trial.jpg" alt="logo of website" id="logo" height="40px"></a>
+            <div id="div_search_searchButton">
+                <div id="search_div">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+                <button class="btn btn-danger" id="search_button" style="height: 44px; width: 78px;"><b>Search</b></button>
+            </div>
+            <div id="notification_signIn_myOrders_shoppingCart_div">
+                <img src="images/icons8-notification-60.png" alt="Notification" id="notification" class="notification_signIn_myOrders_shoppingCart">
+                <img src="images/icons8-person-60.png" alt="Sign in" id="sign_in" class="notification_signIn_myOrders_shoppingCart"  onclick="location.href = 'Sign_in.html'">
+                <img src="images/icons8-shop-96.png" alt="My Orders" id="my_orders" class="notification_signIn_myOrders_shoppingCart">
+                <img src="images/icons8-shopping-cart-120.png" alt="Shopping Cart" id="shopping_cart" class="notification_signIn_myOrders_shoppingCart">
+            </div>
+        </div>
+        <div id="all_categories_user_review_categories">
+            <div class="categories_div" id="all_categories_div">
+                <img src="images/icons8-menu-30.png" alt="Menu logo" id="menu_logo">
+                <h6 class="categories"><b>All categories</b></h6>
+            </div>
+            <div id="user_review_div" class="categories_div">
+                <h6 id="user_review" class="categories">Users' review</h6>
+            </div>
+            <div class="categories_div">
+                <a href="">
+                    <h6 class="categories">Women's Clothing & Accessories</h6>
+                </a>
+            </div>
+            <div class="categories_div">
+                <a href="Men.html">
+                    <h6 class="categories">Men's Clothing & Accessories</h6>
+                </a>
+            </div>
+            <div class="categories_div">
+                <a href="">
+                    <h6 class="categories">Child's Clothing & Accessories</h6>
+                </a>
+            </div>
+        </div>
+        <div id="table_div">
+            <table>
+                <tr>
+                    <td>
+                        <a href="Men.html">
+                            <div class="div_category">
+                                <img src="images/icons8-male-user-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Men's Clothing & Accessories</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-women-shoes-64.png" alt="" class="img_category" height="20px"><h6 class="text_category">Women's Clothing & Accessories</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-family-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Child's Clothing & Accessories</h6>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-ranners-crossing-finish-line-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Hobby, Sport and Travelling</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-lipstick-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Beauty</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-medical-doctor-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Health</h6>    
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-motherboard-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Electronics</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-camera-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Cameras</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-car-16.png" alt="" class="img_category" height="20px"><h6 class="text_category">Automobiles & Motorcycles</h6>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <h3>Jackets & Coats (men's)</h3>
+        <div id="main_Men">
+            <div id="men_categories_div">
+                <h6 class="men_categories">Jackets (men's)</h6>
+                <h6 class="men_categories">Down Coats (men's)</h6>
+                <h6 class="men_categories">Coats (men's)</h6>
+                <h6 class="men_categories">Leather (men's)</h6>
+                <h6 class="men_categories">Windcheaters (men's)</h6>
+                <h6 class="men_categories">Sleeveless Jackets (men's)</h6>
+                <h6 class="men_categories">Trenches (men's)</h6>
+                <h6 class="men_categories">Denim Jackets (men's)</h6>
+            </div>
+            <div>
+                <div id="products">
+                    <div class="product">
+                        <img src="images/Jackets1.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-49%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">8985</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">2022 New Warm Thick Men’s Fashion Jackets Winter Casual Men’s Jackets Real Collar Men’s Windproof Cotton Down Jackets</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets2.jpeg" alt="" height="200px" onclick="location.href='Jacket.html'">
+                        <div class="percent_div">
+                            <h5 class="percent">-77%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">9052</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Zipper Mens Sleeveless Heated Vest Male Electric USB Body Waistcoat Winter Warm Heating Outwear</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets3.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-34%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">6495</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Men Coat Windbreak Warm Cardigan Stand Collar Down Coat for Work</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets4.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-84%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">15367</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Windproof Rainproof Winter Men Outwear Collar Warm Cotton Down Coat Thick Parka Clothing Long</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets5.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-80%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">8559</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Men's Sports Brand Coat Youth Casual Stand-up Collar Thick Cotton Jacket Outdoor Padded Keep Warm In Winter Down Jacket Streetwear Coat</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets6.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-62%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">9861</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Jacket Warm Military Style Men Camouflage Print Outer Wear</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets7.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-56%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">19888</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Trench Coat for Men Woolen Coat for Men Jackets for Men Fashion Jacket&coat Mens Coat Double Collar Coat Cold-proof Jacket</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets8.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-36%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">21536</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Men's Woolen Jackets Double Collar Cold-proof Jacket Warm Windbreaker Fashion</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets9.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-32%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">8294</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Fashion Men's Down Coat Cardigan Drawstring Detachable Winter Jacket Hat Padded</h6>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Jackets10.jpeg" alt="" height="200px">
+                        <div class="percent_div">
+                            <h5 class="percent">-85%</h5>
+                        </div>
+                        <div class="prices_div">
+                            <h4 class="currency_prices">KZT&nbsp;</h4>
+                            <h4 class="prices">19949</h4>
+                        </div>
+                        <div class="description">
+                            <h6 class="description_text">Men's Autumn And Winter Hooded Jacket</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div id="foot">
+            <div id="footer_tags">
+                <h5>Catalog</h5>
+                <h5>Privacy Policy</h5>
+                <h5>Terms of Use</h5>
+                <h5>Copyright Protection</h5>
+                <h5>Support</h5>
+                <h5>About our Company</h5>
+                <h5>Become a seller</h5>
+            </div>
+            <div>
+                <div>
+                    <div id="logos">
+                        <img src="images/icons8-instagram-30.png" alt="" height="24px">
+                        <img src="images/icons8-youtube-50.png" alt="" height="24px">
+                        <img src="images/icons8-twitter-30.png" alt="" height="24px">
+                        <img src="images/icons8-facebook-30.png" alt="" height="24px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $("#all_categories_div").click(function(){
+            $("#table_div").slideToggle();
+        })
+        $("#menu_logo_for_mobile").click(function(){
+            $("#table_div").slideToggle();
+        })
+    </script>
+</body>

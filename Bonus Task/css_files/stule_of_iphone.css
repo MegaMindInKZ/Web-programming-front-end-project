@@ -1,0 +1,10 @@
+#number_input{
+    background-color: rgb(230, 230, 230);
+    height: 48px;
+    width: 192px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 24px;
+    padding: 5px;
+    color: black;
+}

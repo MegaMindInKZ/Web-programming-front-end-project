@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#title_of_webpage{
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 98, 98);
+    font-size: 2vw;
+}
+hr{
+    margin: 0px;
+    border-width: 0.5px;
+}
+#app{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#registration_or_signIn{
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+.choice_class{
+    height: 24px;
+    width: 98px;
+    padding: 0px 16px 0px 16px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+}
+#SignIn{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(255, 98, 98);
+}
+#checkbox_div{
+    display: flex;
+    align-items: center;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+.login_register{
+    border-width: 0px;
+    height: 40px;
+    width: 342px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+    font-size: 14px;
+}
+.login_register_div{
+    padding: 3px 12px 3px 12px;
+    border: 1px solid darkgrey;
+    width: 368px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+#submit{
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    height: 24px;
+    width: 368px;
+    padding: 10px 12px 10px 12px;
+    border: rad;
+    background-color: rgb(255, 98, 98);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#registration_page_div{
+    display: none;
+}
+.gender_div{
+    margin: 5px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+}
+#gender_title{
+    font-size: 16px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+}
+#date_title{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+}
+#date_div{
+    width: 100%;
+    height: 40px;
+    padding: 3px 12px 3px 12px;
+    border: 1px solid darkgrey;
+    width: 368px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+#date_input{
+    border-width: 0px;
+    height: 40px;
+    width: 342px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+    font-size: 14px;
+}
+#file_title{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+}
+#file_div{
+    margin-bottom: 10px;
+}

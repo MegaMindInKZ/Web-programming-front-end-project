@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Log in</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css_files/style_of_Sign_in.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="Script/Sign_in.js" defer></script>
+        <body>
+        <div id="title_of_webpage" onclick="location.href='MainPage.html'">
+            ZZ Shopping
+        </div>
+        <hr>
+        <div id="app">
+            <div id="registration_or_signIn">
+                <div class="choice_class" id="registration" onclick="registration()">
+                    Registration
+                </div>
+                <div class="choice_class" id="SignIn" onclick="signIn()">
+                    Sign in
+                </div>
+            </div>
+            <div id="SignIn_page_div">
+                <div class="login_register_div">
+                    <input id="login_sign_in" class="login_register" type="login" placeholder="Login">
+                </div>
+                <div class="login_register_div">
+                    <input id="password" class="login_register" type="password" placeholder="Password">
+                </div>
+                <div id="checkbox_div">
+                    <input type="checkbox" id="checkboxInput_SignIn" onchange="isAvailable2()">
+                    <label for="checkbox">See password</label>
+                </div>
+                <div id="submit" onclick="check1()">Enter</div>
+            </div>
+            <div id="registration_page_div">
+                <div class="login_register_div">
+                    <input id="login_register" class="login_register" type="login" placeholder="Login">
+                </div>
+                <div class="login_register_div">
+                    <input id="password_register" class="login_register" type="password" placeholder="Password">
+                </div>
+                <div class="login_register_div">
+                    <input id="recursive_password" class="login_register" type="password" placeholder="Repeat Password">
+                </div>
+                <div id="checkbox_div">
+                    <input type="checkbox" id="checkboxInput_registration" onclick="isAvailable1()">
+                    <label for="checkbox">See password</label>
+                </div>
+                <div id="gender_title">
+                    Gender:
+                </div>
+                <div class="gender_div">
+                    <input type="radio" class="radio_input" id="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div class="gender_div">
+                    <input type="radio" class="radio_input" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div id="date_title">
+                    {{message}}
+                </div>
+                <div id="date_div">
+                    <input type="date" id="date_input">
+                </div>
+                <div id="file_title">
+                    Avatar:
+                </div>
+                <div id="file_div">
+                    <input type="file" id="file_input" accept="image/*">
+                </div>
+                <div id="submit" onclick="check()">Enter</div>
+
+                <audio id="audio">
+                    <source src="images/Wrong Clakson Sound Effect.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            
+        </div>
+        <script>
+            let app = new Vue({
+                el: '#date_title',
+                data: {
+                    message: 'Date of Birth:'
+                }
+            });
+        </script>
+    </body>
+</html>
+<!-- <div>
+    <div class="login_register_div">
+        <input id="login" class="login_register" type="login" placeholder="Login">
+    </div>
+    <div class="login_register_div">
+        <input id="password" class="login_register" type="password" placeholder="Password">
+    </div>
+    <div id="checkbox_div">
+        <input type="checkbox">
+        <label for="checkbox">See password</label>
+    </div>
+    <div id="submit">Enter</div>
+</div> -->

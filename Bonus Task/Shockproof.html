@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shockproof Armor Phonecase</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css_files/style_of_header.css">
+    <link rel="stylesheet" href="css_files/style_of_Shockproof.css">
+    <link rel="stylesheet" href="css_files/style_of_footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Script/header_script.js" defer></script>
+    <script src="Script/product_script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <header>
+        <div id="margin_currency_language_support_delivery_warranty_div">
+            <div id="currency_language_support_delivery_warranty_div" id="lang_currency">
+                <div id="language_currency_div">
+                    <select name="language" id="language_select">
+                        <option value="English"><b>English</b></option>
+                        <option value="Russian">Russian</option>
+                        <option value="Kazakh">Kazakh</option>
+                    </select>
+                    <select name="currency" id="currency_select" onchange="changeCurrency()">
+                        <option value="kz">KZT</option>
+                        <option value="us">USD</option>
+                    </select>
+                </div>
+                <div id="support_delivery_warranty">
+                    <h6 id="support">Support</h6>
+                    <h6 id="delivery">Delivery</h6>
+                    <h6 id="warranty">Warranty</h6>
+                </div>
+            </div>
+        </div>
+        <div id="logo_search_searchButton_notification_signIn_myOrders_shoppingCart_div">
+            <img src="images/icons8-menu-30.png" alt="Menu logo" id="menu_logo_for_mobile">
+            <a href="MainPage.html"><img src="images/logo_of_website_trial.jpg" alt="logo of website" id="logo" height="40px"></a>
+            <div id="div_search_searchButton">
+                <div id="search_div">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+                <button class="btn btn-danger" id="search_button" style="height: 44px; width: 78px;"><b>Search</b></button>
+            </div>
+            <div id="notification_signIn_myOrders_shoppingCart_div">
+                <img src="images/icons8-notification-60.png" alt="Notification" id="notification" class="notification_signIn_myOrders_shoppingCart">
+                <img src="images/icons8-person-60.png" alt="Sign in" id="sign_in" class="notification_signIn_myOrders_shoppingCart"  onclick="location.href = 'Sign_in.html'">
+                <img src="images/icons8-shop-96.png" alt="My Orders" id="my_orders" class="notification_signIn_myOrders_shoppingCart">
+                <img src="images/icons8-shopping-cart-120.png" alt="Shopping Cart" id="shopping_cart" class="notification_signIn_myOrders_shoppingCart">
+            </div>
+        </div>
+        <div id="all_categories_user_review_categories">
+            <div class="categories_div" id="all_categories_div">
+                <img src="images/icons8-menu-30.png" alt="Menu logo" id="menu_logo">
+                <h6 class="categories"><b>All categories</b></h6>
+            </div>
+            <div id="user_review_div" class="categories_div">
+                <h6 id="user_review" class="categories">Users' review</h6>
+            </div>
+            <div class="categories_div">
+                <a href="">
+                    <h6 class="categories">Women's Clothing & Accessories</h6>
+                </a>
+            </div>
+            <div class="categories_div">
+                <a href="Men.html">
+                    <h6 class="categories">Men's Clothing & Accessories</h6>
+                </a>
+            </div>
+            <div class="categories_div">
+                <a href="">
+                    <h6 class="categories">Child's Clothing & Accessories</h6>
+                </a>
+            </div>
+        </div>
+        <div id="table_div">
+            <table>
+                <tr>
+                    <td>
+                        <a href="Men.html">
+                            <div class="div_category">
+                                <img src="images/icons8-male-user-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Men's Clothing & Accessories</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-women-shoes-64.png" alt="" class="img_category" height="20px"><h6 class="text_category">Women's Clothing & Accessories</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-family-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Child's Clothing & Accessories</h6>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-ranners-crossing-finish-line-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Hobby, Sport and Travelling</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-lipstick-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Beauty</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-medical-doctor-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Health</h6>    
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-motherboard-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Electronics</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-camera-48.png" alt="" class="img_category" height="20px"><h6 class="text_category">Cameras</h6>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <div class="div_category">
+                                <img src="images/icons8-car-16.png" alt="" class="img_category" height="20px"><h6 class="text_category">Automobiles & Motorcycles</h6>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <div id="all_information">
+            <div id="comments_images">
+                <div id="all_images_of_product">
+                    <div id="images_of_product">
+                        <div class="image_of_product">
+                            <img src="images/Shockproof1.jpeg" alt="" width="100%" onmouseover="image(this)">
+                        </div>
+                        <div class="image_of_product">
+                            <img src="images/Shockproof2.jpeg" alt="" width="100%" onmouseover="image(this)">
+                        </div>
+                        <div class="image_of_product">
+                            <img src="images/Shockproof3.jpeg" alt="" width="100%" onmouseover="image(this)">
+                        </div>
+                        <div class="image_of_product">
+                            <img src="images/Shockproof4.jpeg" alt="" width="100%" onmouseover="image(this)">
+                        </div>
+                        <div class="image_of_product">
+                            <img src="images/Shockproof5.jpeg" alt="" width="100%" onmouseover="image(this)">
+                        </div>
+                        <div class="image_of_product">
+                            <img src="images/Shockproof6.jpeg" alt="" width="100%" onmouseover="image(this)">                        
+                        </div>
+                    </div>
+                    <div id="main_image_of_product_div">
+                        <img src="images/Shockproof1.jpeg" id="main_image_of_product" alt="" height="496.85px" id="main_image">
+                    </div>
+                </div>
+                <div id="reviews">
+                    <div id="Total_reviews">
+                        <h4><b>Reviews</b> <b id="number_comments">30000</b></h4>
+                    </div>
+                    <hr>
+                    <div id="comments">
+                        <div class="comment_div">
+                            <div class="comment_info">
+                                <div class="image_of_account">
+                                    <img src="images/icons8-person-60.png" height="36px" alt="">
+                                </div>
+                                <div>
+                                    <h5><b>Zanggar Zhumagaliyev</b></h5>
+                                    <h6><b class="date_of_comment">November 28, 2021</b></h6>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Good Product</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment_div">
+                            <div class="comment_info">
+                                <div class="image_of_account">
+                                    <img src="images/icons8-person-60.png" height="36px" alt="">
+                                </div>
+                                <div>
+                                    <h5><b>Kainar Tursynbek</b></h5>
+                                    <h6><b class="date_of_comment">November 25, 2021</b></h6>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>It's perfect</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment_div">
+                            <div class="comment_info">
+                                <div class="image_of_account">
+                                    <img src="images/icons8-person-60.png" height="36px" alt="">
+                                </div>
+                                <div>
+                                    <h5><b>Nursultan Myrzagulov</b></h5>
+                                    <h6><b class="date_of_comment">October 25, 2021</b></h6>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Well done</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment_div">
+                            <div class="comment_info">
+                                <div class="image_of_account">
+                                    <img src="images/icons8-person-60.png" height="36px" alt="">
+                                </div>
+                                <div>
+                                    <h5><b>Nursultan Nazarbaev</b></h5>
+                                    <h6><b class="date_of_comment">November 29, 2021</b></h6>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Good job</h5>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <hr id="extra_hr">
+            </div>
+            <div id="main_product_description">
+                <div id="product_description_title">
+                    Shockproof Armor Magnetic Ring Holder PC + TPU Stand Case Cover for iPhone Samsung Huawei Xiaomi OPPO Vivo
+                </div>
+                <div id="rating">
+                    <div class="rating_details">
+                        <img src="images/icons8-star-half-empty-60.png" height="16px" alt="">
+                        <img src="images/icons8-star-half-empty-60.png" height="16px" alt="">
+                        <img src="images/icons8-star-half-empty-60.png" height="16px" alt="">
+                        <img src="images/icons8-star-half-empty-60.png" height="16px" alt="">
+                        <img src="images/icons8-star-half-empty-60.png" height="16px" alt="">
+                        <div class="rating_score">5.0</div>
+                    </div>
+                    <div class="rating_details">30,000+ reviews</div>
+                    <div class="rating_details">
+                        <img src="images/icons8-heart-50.png" height="16px" alt="">
+                        <div class="rating_score">Add to favorites</div>
+                    </div>
+                    <div class="rating_details">
+                        <img src="images/icons8-share-24.png" alt="" height="16px">
+                        <div class="rating_score">Share</div>
+                    </div>
+                </div>
+                <div id="price_div">
+                    <div id="real_price_div">
+                        <h2 class="price_text">from&nbsp;</h2>
+                        <h2 class="currency_prices price_text">KZT&nbsp;</h2>
+                        <h2 class="prices price_text">1602</h2>
+                        <h2>&nbsp;&nbsp;&nbsp;</h2>
+                    </div>
+                    <div id="sale_div">
+                        <strike><h3 class="price_text">from&nbsp;</h3></strike>
+                        <strike><h3 class="currency_prices sale price_text">KZT&nbsp;</h3></strike>
+                        <strike><h3 class="prices sale price_text">7628</h3></strike>
+                    </div>
+                </div>
+                <button class="btn" id="search_button" style="height: 48px; width: 130px; margin: 15px 15px 0px 0px;"><b>Add to Cart</b></button>
+                <button class="btn btn-danger" id="search_button" style="height: 48px; width: 130px; margin-top: 15px;"><b>Buy</b></button>
+                <div id="shipping_detail">
+                    <img src="images/icons8-calendar-30.png" alt="" height="16px">
+                    <div>
+                        Shipping from 26 days
+                    </div>
+                </div>
+                <div>
+                    <div id="color_title">Color</div>
+                    <div>
+                        <img src="images/color1.jpeg" alt="" height="40px" class="images_color" onclick="color('Black'); image(this)">
+                        <img src="images/color2.jpeg" alt="" height="40px" class="images_color" onclick="color('Navy Blue'); image(this)">
+                        <img src="images/color3.jpeg" alt="" height="40px" class="images_color" onclick="color('Red'); image(this)">
+                    </div>
+                </div>
+                <div>
+                    <div id="size_title">{{message}}</div>
+                    <div id="size_of_cases">
+                        <div class="sizes_of_case" onclick="z(this)">
+                            Honor 9X Premium 
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            Redmi Note 8 Pro
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 11 Pro Max
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 11 Pro
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 11
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 12
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 12 Mini
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 12 Pro
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 12 Pro Max
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 13
+                        </div>
+                        <div class="sizes_of_case" onclick="z(this)">
+                            iPhone 13 Mini
+                        </div>
+                    </div>
+                </div>
+                <object data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1718.6454008049905!2d-71.07787073663287!3d42.36955552931532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370bc261e50e5%3A0xf3cba8437d505a26!2sHubSpot!5e0!3m2!1sen!2sus!4v1602001548652!5m2!1sen!2sus" width="100%"></object>
+            </div>
+        </div>
+        <div>
+            <h2 id="similar_items_text">
+                Similar items
+            </h2>
+        </div>
+        <br>
+        <br>
+        <div id="products">
+            <div class="product">
+                <img src="images/Gadgets.jpeg" alt="" height="200px">
+                <div class="percent_div">
+                    <h5 class="percent">-9%</h5>
+                </div>
+                <div class="prices_div">
+                    <h4 class="currency_prices">KZT&nbsp;</h4>
+                    <h4 class="prices">860</h4>
+                </div>
+                <div class="description">
+                    <h6 class="description_text">Liquid Silicone Soft Candy Color Cases Full Covers Phone Cover For Xiaomi 11 POCO X3 NFC M3 10T Lite CC9Pro Redmi K40 Note 10 Pro</h6>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/portmane.jpeg" alt="" height="200px">
+                <div class="percent_div">
+                    <h5 class="percent">-79%</h5>
+                </div>
+                <div class="prices_div">
+                    <h4 class="currency_prices">KZT&nbsp;</h4>
+                    <h4 class="prices">2573</h4>
+                </div>
+                <div class="description">
+                    <h6 class="description_text">Yogodlns Women High Quality Cell Phone Pocket Fashion PU Leather Card Holders Small Crossbody Bag</h6>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/ReadingGlasses.jpeg" alt="" height="200px">
+                <div class="percent_div">
+                    <h5 class="percent">-91%</h5>
+                </div>
+                <div class="prices_div">
+                    <h4 class="currency_prices">KZT&nbsp;</h4>
+                    <h4 class="prices">585</h4>
+                </div>
+                <div class="description">
+                    <h6 class="description_text">Ultralight Rimless Reading Glasses Diamond-cut Progressive Multifocal Presbyopia Eyeglasses Computer Goggles for Men and Women</h6>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pinkphonecase.jpeg" alt="" height="200px">
+                <div class="percent_div">
+                    <h5 class="percent">-72%</h5>
+                </div>
+                <div class="prices_div">
+                    <h4 class="currency_prices">KZT&nbsp;</h4>
+                    <h4 class="prices">2403</h4>
+                </div>
+                <div class="description">
+                    <h6 class="description_text">Rivet Design Wallet Matte PU Leather Phone Case Bag For iPhone Samsung Xiaomi Huawei Full Body Protective Back Cover</h6>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/screenphonecase.jpeg" alt="" height="200px">
+                <div class="percent_div">
+                    <h5 class="percent">-83%</h5>
+                </div>
+                <div class="prices_div">
+                    <h4 class="currency_prices">KZT&nbsp;</h4>
+                    <h4 class="prices">1322</h4>
+                </div>
+                <div class="description">
+                    <h6 class="description_text">360 Full Cover Phone Case for iPhone 8 Plus Huawei Honor 8S Xiaomi Mi 9T Samsung Galaxy A51 4G</h6>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/shinyphonecase.jpeg" alt="" height="200px">
+                <div class="percent_div">
+                    <h5 class="percent">-86%</h5>
+                </div>
+                <div class="prices_div">
+                    <h4 class="currency_prices">KZT&nbsp;</h4>
+                    <h4 class="prices">981</h4>
+                </div>
+                <div class="description">
+                    <h6 class="description_text">Fashion Shiny Small Square Glitter Phone Case for iPhone Samsung A51 A71 S20 Ultra Huawei P30 Xiaomi</h6>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div id="foot">
+            <div id="footer_tags">
+                <h5>Catalog</h5>
+                <h5>Privacy Policy</h5>
+                <h5>Terms of Use</h5>
+                <h5>Copyright Protection</h5>
+                <h5>Support</h5>
+                <h5>About our Company</h5>
+                <h5>Become a seller</h5>
+            </div>
+            <div>
+                <div>
+                    <div id="logos">
+                        <img src="images/icons8-instagram-30.png" alt="" height="24px">
+                        <img src="images/icons8-youtube-50.png" alt="" height="24px">
+                        <img src="images/icons8-twitter-30.png" alt="" height="24px">
+                        <img src="images/icons8-facebook-30.png" alt="" height="24px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $("#all_categories_div").click(function(){
+            $("#table_div").slideToggle();
+        })
+        $("#menu_logo_for_mobile").click(function(){
+            $("#table_div").slideToggle();
+        })
+        let x = new Vue({
+            el: '#size_title',
+            data: {
+                message: "Size"
+            }
+        })
+        function z(w){
+            x.message = "Size: "+ w.innerHTML;
+        }
+    </script>
+</body>
+</html>

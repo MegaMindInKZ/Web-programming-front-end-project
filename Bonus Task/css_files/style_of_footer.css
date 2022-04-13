@@ -1,0 +1,23 @@
+footer{
+    margin: 21px 101.6px 32px 101.6px;
+    color: rgb(178, 179, 194);
+}
+#logos>img{
+    color: rgb(178, 179, 194);
+    margin: 16px;
+}
+#footer_tags{
+    display: flex;
+}
+#logos{
+    display: flex;
+    justify-content: flex-end;
+}
+#footer_tags>h5{
+    margin-right: 27px;
+}
+@media(max-width: 1112px) {
+    #footer_tags{
+        flex-direction: column;
+    }
+}
